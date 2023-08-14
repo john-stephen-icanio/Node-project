@@ -10,24 +10,14 @@ jobs:
   node-js-demo:
     runs-on: [self-hosted, linux, x64]
     steps:
-#     - name: started
+      - name: started
       - run: pwd
       - run: ls
 
- #      - name: execute
- #     - uses: actions/checkout@v3
- #     - run: git checkout ${GITHUB_REF#refs/heads/}
+      - name: execute
+      - uses: actions/checkout@v3
+      - run: git checkout ${GITHUB_REF#refs/heads/}
 
-     # - run: npm install
-     # - run: pm2 delete node
-     # - run: pm2 start "npm start" --name node
-
-# name: Python-Flask demo
-# run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-# on: [push]
-# jobs:
-  # Explore-GitHub-Actions:
-    # runs-on: [self-hosted, linux, x64]
-     # steps:
-      #  - run: pwd
-       # - run: ls
+      - run: npm install
+      - run: pm2 delete node
+      - run: pm2 start "npm start" --name node
