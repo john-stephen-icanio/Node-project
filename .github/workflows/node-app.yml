@@ -2,15 +2,15 @@
 
 name: Sample Node js Applications
 on:
- push:
-   branches:
-    - '*'
+  push:
+    branches:
+      - '*'
 
 jobs:
   node-js-demo:
     runs-on: [self-hosted, linux, x64]
     steps:
-      - name: started
+#     - name: started
       - run: pwd
       - run: ls
 
