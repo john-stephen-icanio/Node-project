@@ -6,8 +6,8 @@ on:
    branches:
     - '*'
 
-# jobs:
- # node-js-demo:
+jobs:
+ node-js-demo:
    # runs-on: [ self-hosted, linux, x64 ]
    # steps:
      # - name: started
@@ -25,8 +25,8 @@ on:
 # name: Python-Flask demo
 # run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 # on: [push]
-jobs:
-  Explore-GitHub-Actions:
+# jobs:
+  # Explore-GitHub-Actions:
     runs-on: [self-hosted, linux, x64]
     steps:
       - run: pwd
