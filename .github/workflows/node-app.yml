@@ -1,7 +1,7 @@
 # yaml file for node js j
 
-# name: Sample Node js Applications
-# on: [push]
+name: Sample Node js Applications
+on: [push]
 
 # jobs:
  # node-js-demo:
@@ -19,9 +19,9 @@
      # - run: pm2 delete node
      # - run: pm2 start "npm start" --name node
 
-name: Python-Flask demo
+# name: Python-Flask demo
 # run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+# on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: [self-hosted, linux, x64]
