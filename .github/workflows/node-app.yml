@@ -8,7 +8,7 @@ on:
 
 jobs:
  node-js-demo:
-   runs-on: [ self-hosted, linux, x64 ]
+   runs-on: [self-hosted, linux, x64]
    # steps:
      # - name: started
      # - run: pwd
