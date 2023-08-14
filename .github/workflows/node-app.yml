@@ -8,13 +8,14 @@ on:
 
 jobs:
   node-js-demo:
-    runs-on: self-hosted
+    runs-on: [ self-hosted, linux, x64 ]
     steps:
       - name: started
       - run: pwd
       - run: ls
 
       - name: execute
+      - uses: actions/checkout@v3
       - run: git checkout ${GITHUB_REF#refs/heads/}
 
       - run: npm install
