@@ -1,7 +1,10 @@
 # yaml file for node js j
 
 name: Sample Node js Applications
-on: [push]
+on:
+ push:
+   branches:
+    - '*'
 
 # jobs:
  # node-js-demo:
