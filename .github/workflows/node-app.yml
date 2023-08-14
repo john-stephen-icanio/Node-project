@@ -14,11 +14,11 @@ jobs:
       - run: pwd
       - run: ls
 
-      - name: execute
-      - uses: actions/checkout@v3
-      - run: git checkout ${GITHUB_REF#refs/heads/}
+ #      - name: execute
+ #     - uses: actions/checkout@v3
+ #     - run: git checkout ${GITHUB_REF#refs/heads/}
 
-      - run: npm install
-      - run: pm2 delete node
-      - run: pm2 start "npm start" --name node
+     # - run: npm install
+     # - run: pm2 delete node
+     # - run: pm2 start "npm start" --name node
 
