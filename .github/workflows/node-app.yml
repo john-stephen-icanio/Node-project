@@ -11,9 +11,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: started
-      - run: |
-          pwd
-          ls
+      - run: pwd
+      - run: ls
 
       - name: execute
       - run: git checkout ${GITHUB_REF#refs/heads/}
