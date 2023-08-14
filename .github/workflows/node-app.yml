@@ -9,10 +9,10 @@ on:
 jobs:
  node-js-demo:
    runs-on: [self-hosted, linux, x64]
-   # steps:
-     # - name: started
-     # - run: pwd
-     # - run: ls
+   steps:
+     - name: started
+     - run: pwd
+     - run: ls
 
  #      - name: execute
  #     - uses: actions/checkout@v3
@@ -28,6 +28,6 @@ jobs:
 # jobs:
   # Explore-GitHub-Actions:
     # runs-on: [self-hosted, linux, x64]
-    steps:
-      - run: pwd
-      - run: ls
+     # steps:
+      #  - run: pwd
+       # - run: ls
