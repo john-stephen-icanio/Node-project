@@ -8,7 +8,7 @@ on:
 
 jobs:
  node-js-demo:
-   # runs-on: [ self-hosted, linux, x64 ]
+   runs-on: [ self-hosted, linux, x64 ]
    # steps:
      # - name: started
      # - run: pwd
@@ -27,7 +27,7 @@ jobs:
 # on: [push]
 # jobs:
   # Explore-GitHub-Actions:
-    runs-on: [self-hosted, linux, x64]
+    # runs-on: [self-hosted, linux, x64]
     steps:
       - run: pwd
       - run: ls
