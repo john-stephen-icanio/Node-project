@@ -7,12 +7,12 @@ on:
     - '*'
 
 jobs:
- node-js-demo:
-   runs-on: [self-hosted, linux, x64]
-   steps:
-    - name: started
-    - run: pwd
-    - run: ls
+  node-js-demo:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - name: started
+      - run: pwd
+      - run: ls
 
  #      - name: execute
  #     - uses: actions/checkout@v3
