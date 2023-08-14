@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: started
       - run: |
-        pwd
-        ls
+          pwd
+          ls
 
       - name: execute
       - run: git checkout ${GITHUB_REF#refs/heads/}
