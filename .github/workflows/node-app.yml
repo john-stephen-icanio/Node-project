@@ -15,7 +15,7 @@ jobs:
       - run: ls
     
 #      - uses: actions/checkout@v3
-      - run: git checkout ${{ github.head_ref }}
+      - run: echo "${{ github.head_ref }}"
       - run: npm install
       - run: pm2 delete node
       - run: PORT=2022 pm2 start "npm start" --name node
