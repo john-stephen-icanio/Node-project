@@ -8,14 +8,8 @@ on:
 
 jobs:
   node-js-demo:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       
-      - run: pwd
-      - run: ls
-    
-#      - uses: actions/checkout@v3
-      - run: echo ${GITHUB_REF#refs/heads/}
-      - run: npm install
-      - run: pm2 delete node
-      - run: PORT=2022 pm2 start "npm start" --name node
+    - name: Git pull
+      run: git stash && git pull
